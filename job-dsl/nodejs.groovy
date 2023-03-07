@@ -5,8 +5,8 @@ job("nodejs example") {
             node / gitConfigEmail("qkransrb90@gmail.com")
         }
     }
-    
-    trigger {
+
+    triggers {
         scm("H/S * * * *")
     }
 
