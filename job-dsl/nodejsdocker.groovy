@@ -15,7 +15,7 @@ job("nodejs docker example") {
     }
 
     steps {
-        dockerBuildAndPush {
+        dockerBuildAndPublish {
             repositoryName("qkransrb90/app")
             tag("latest")
             registryCredentials("dockerhub")
