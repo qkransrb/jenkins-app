@@ -1,7 +1,9 @@
 job("nodejs docker example") {
-    scm("https://github.com/qkransrb/jenkins-app.git") { node ->
-        node / gitConfigName("qkransrb")
-        node / gitConfigEmail("qkransrb90@gmail.com")
+    scm {
+        git("https://github.com/qkransrb/jenkins-app.git") { node ->
+            node / gitConfigName("qkransrb")
+            node / gitConfigEmail("qkransrb90@gmail.com")
+        }
     }
 
     triggers {
