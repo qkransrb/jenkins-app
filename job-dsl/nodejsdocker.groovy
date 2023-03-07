@@ -15,7 +15,7 @@ job("nodejs docker example") {
     steps {
         dockerBuildAndPush {
             repositoryName("qkransrb90/app")
-            tag("${GIT_COMMIT,length=4}")
+            tag("latest")
             registryCredentials("dockerhub")
             forcePull(false)
             forceTag(false)
