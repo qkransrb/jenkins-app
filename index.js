@@ -2,6 +2,10 @@ const express = require("express");
 
 const app = express();
 
+exports.sayHello = () => {
+  return "hello";
+};
+
 app.get("/", (_, res) => {
   return res.send("Hi there!");
 });
